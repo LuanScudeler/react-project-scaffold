@@ -1,0 +1,71 @@
+{
+    "plugins": [
+        "prettier"
+    ],
+    "extends": [
+        "airbnb",
+        "airbnb/hooks",
+        "react-app",
+        "prettier",
+        "prettier/react",
+        "plugin:prettier/recommended"
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": ["src"]
+            }
+        }
+    },
+    "rules": {
+        "object-curly-spacing": [
+            "warn",
+            "always"
+        ],
+        "no-unused-vars": [
+            "warn",
+            {
+                "vars": "all",
+                "args": "none"
+            }
+        ],
+        "max-len": [
+            "warn",
+            {
+                "code": 80,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreComments": true
+            }
+        ],
+        "no-plusplus": [
+            "error",
+            {
+                "allowForLoopAfterthoughts": true
+            }
+        ],
+        "import/no-extraneous-dependencies": [
+            "error",
+            {
+                "devDependencies": ["**/*.test.js", "**/*.spec.js"]
+            }
+        ],
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        "import/prefer-default-export": "off",
+        "react/prop-types": "off",
+        "react/destructuring-assignment": "off",
+        "react/no-unescaped-entities": "off",
+        "react/jsx-key": "error",
+        "react/jsx-props-no-spreading": "off",
+        "react/jsx-boolean-value": "off",
+        "react/jsx-one-expression-per-line": "off",
+        "react/jsx-wrap-multilines": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn" 
+    }
+}
